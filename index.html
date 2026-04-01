@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap 5 Grid System (Only Grid) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- WebGL Canvas Background -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="premium-nav">
+        <div class="nav-container container">
+            <div class="logo">
+                <span class="glow-text">Hiral</span> Chorasiya
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Wrapper -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="row align-items-center justify-content-center text-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <h1 class="hero-title reveal-text">I am <br /><span
+                                class="typewriter-text glow-text"></span><span class="type-cursor">|</span></h1>
+                        <p class="hero-subtext reveal-text">Creating high-performance websites with optimized speed,
+                            SEO, and user-focused design that drives real results.</p>
+                        <div class="hero-cta reveal-text">
+                            <a href="#projects" class="glow-btn">View Work</a>
+                            <a href="#contact" class="glow-btn secondary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container relative-z">
+                <div class="row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-5 mb-5 mb-md-0 about-img-col">
+                        <div class="profile-image-wrapper glass-panel">
+                            <div class="glow-ring"></div>
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                                alt="Creative Developer" class="profile-img tilt-card">
+
+                            <!-- Floating skill tags -->
+                            <div class="floating-tag tag-1"><i class="fab fa-html5"></i> HTML5</div>
+                            <div class="floating-tag tag-2"><i class="fab fa-css3-alt"></i> CSS3</div>
+                            <div class="floating-tag tag-3"><i class="fab fa-js"></i> ES6+</div>
+                        </div>
+                    </div>
+                    <!-- Content Column -->
+                    <div class="col-12 col-md-6 offset-md-1 about-content-col">
+                        <h2 class="section-title">Beyond <span class="glow-text">Code</span>.</h2>
+                        <p class="section-desc">I don't just build websites; I craft digital realms. With an eye for
+                            pixel-perfect design and a deep understanding of logical architecture, I deliver smooth,
+                            immersive experiences.</p>
+
+                        <div class="skills-wrapper">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Frontend Engineering</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="95%">
+                                        <div class="bar-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SEO</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="80%">
+                                        <div class="bar-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>WordPress / CMS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%">
+                                        <div class="bar-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>UI/UX Animation</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%">
+                                        <div class="bar-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container relative-z">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Career <span class="glow-text">Journey</span></h2>
+                    <p class="section-desc">A timeline of my professional growth and key roles.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date glow-text">Jan 2026 - Present</span>
+                            <h3 class="timeline-title">Senior Creative Developer</h3>
+                            <h4 class="timeline-company">Searchonic</h4>
+                            <p class="timeline-desc">Building high-performance websites and interactive UI using
+                                JavaScript, GSAP, WebGL, and WordPress.
+                                Improved Core Web Vitals, page speed, and SEO to boost user experience and conversions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date glow-text">Feb 2024 - Nov 2025</span>
+                            <h3 class="timeline-title">Junior Creative Developer + SEO Executive</h3>
+                            <h4 class="timeline-company">Searchonic</h4>
+                            <p class="timeline-desc">Handled website updates, bug fixes, and performance improvements
+                                Contributed to multiple live projects across different industries.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date glow-text">July 2023 - Nov 2023</span>
+                            <h3 class="timeline-title">Web Dev Intern</h3>
+                            <h4 class="timeline-company">Saeculum Solutions</h4>
+                            <p class="timeline-desc">Designed and developed custom WordPress themes and performant
+                                landing pages for small businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Skills Section -->
+        <section id="skills" class="key-skills-section">
+            <div class="container relative-z">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">My Tech <span class="glow-text">Stack</span></h2>
+                    <p class="section-desc">Technologies and tools I use to build premium digital experiences.</p>
+                </div>
+
+                <div class="row skills-grid justify-content-center">
+                    <!-- Skill Badges -->
+
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fab fa-html5 badge-icon"></i>
+                            <span>HTML5</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fab fa-css3-alt badge-icon"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fab fa-js-square badge-icon"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fas fa-ranking-star badge-icon"></i>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fab fa-php badge-icon"></i>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="skill-badge glass-panel">
+                            <i class="fab fa-wordpress badge-icon"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container relative-z">
+                <div class="text-center mb-5 project-header">
+                    <h2 class="section-title">Selected <span class="glow-text">Works</span></h2>
+                    <p class="section-desc">A gallery of depth, light, and modern engineering.</p>
+                </div>
+
+                <div class="row project-grid">
+                    <!-- Project 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel">
+                            <div class="project-img-wrapper">
+                                <img src="ac.PNG" alt="AC Repair">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">AC Repair & Maintenance</h3>
+                                    <p class="proj-desc">Lead generation website with fast load speed and mobile-first
+                                        design</p>
+                                    <a href="https://hiral-chorasiya.github.io/ShreejiACServices/"
+                                        class="glow-btn small-btn">View Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel mt-md-5">
+                            <div class="project-img-wrapper">
+                                <img src="photographer.PNG" alt="Photography">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">Photography Portfolio</h3>
+                                    <p class="proj-desc">Interactive portfolio with smooth GSAP animations and optimized
+                                        image loading</p>
+                                    <a href="https://hiral-chorasiya.github.io/ShreejiPhotoStudio/"
+                                        class="glow-btn small-btn">View Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel">
+                            <div class="project-img-wrapper">
+                                <img src="cafe.PNG" alt="Quantum AI">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">Cafe Experience Website</h3>
+                                    <p class="proj-desc">Responsive website with immersive UI, menu display, and smooth
+                                        scroll interactions</p>
+                                    <a href="https://hiral-chorasiya.github.io/Lumiere/" class="glow-btn small-btn">View
+                                        Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel">
+                            <div class="project-img-wrapper">
+                                <img src="thermonic.PNG" alt="Thermonic">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">E-commerce Store</h3>
+                                    <p class="proj-desc">Fully functional online store with 400+ product showcase pages
+                                        and optimized SEO.
+                                    </p>
+                                    <a href="https://thermonicindia.com/" class="glow-btn small-btn">View Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel mt-md-5">
+                            <div class="project-img-wrapper">
+                                <img src="fintask.PNG" alt="FinTask">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">Financial Services</h3>
+                                    <p class="proj-desc">Professional financial services website with clean UI,
+                                        responsive design, and optimized performance.</p>
+                                    <a href="https://fintask.com.au/" class="glow-btn small-btn">View Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 project-item">
+                        <div class="project-card tilt-card glass-panel">
+                            <div class="project-img-wrapper">
+                                <img src="empath.PNG" alt="Empath Pathology">
+                                <div class="project-overlay">
+                                    <h3 class="proj-title">Empath</h3>
+                                    <p class="proj-desc">Modern laboratory website with structured content, intuitive
+                                        navigation, and responsive design.</p>
+                                    <a href="https://empathpathology.com/" class="glow-btn small-btn">View Case</a>
+                                </div>
+                            </div>
+                            <div class="project-card-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container relative-z">
+                <div class="text-center mb-5 service-header">
+                    <h2 class="section-title">Digital <span class="glow-text">Expertise</span></h2>
+                </div>
+                <div class="row">
+                    <!-- Service 1 -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 svc-item">
+                        <div class="service-card glass-panel floating-anim" style="animation-delay: 0s;">
+                            <div class="svc-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="svc-title">Web Development</h3>
+                            <p class="svc-desc">High-performance scalable SPA using modern frontend stacks.</p>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 svc-item">
+                        <div class="service-card glass-panel floating-anim" style="animation-delay: 0.2s;">
+                            <div class="svc-icon">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <h3 class="svc-title">WordPress Dev</h3>
+                            <p class="svc-desc">Custom themes & plugins, headless WP architectures.</p>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 svc-item">
+                        <div class="service-card glass-panel floating-anim" style="animation-delay: 0.4s;">
+                            <div class="svc-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="svc-title">SEO Optimization</h3>
+                            <p class="svc-desc">Technical SEO, semantic markup, Web Vitals, and lightning-fast load
+                                times.</p>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 svc-item">
+                        <div class="service-card glass-panel floating-anim" style="animation-delay: 0.6s;">
+                            <div class="svc-icon">
+                                <i class="fas fa-vector-square"></i>
+                            </div>
+                            <h3 class="svc-title">UI/UX Motion</h3>
+                            <p class="svc-desc">Physics-based animations, micro-interactions, canvas art.</p>
+                            <div class="svc-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container relative-z">
+                <h2 class="section-title text-center mb-5">Client <span class="glow-text">Voices</span></h2>
+            </div>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testi-card glass-panel">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testi-text">"It's amazing .. Impressive on first look .. content and graphics are
+                            good."</p>
+                        <h4 class="testi-name">Jaimin Patel</h4>
+                        <span class="testi-role">CEO, Empath</span>
+                    </div>
+                    <div class="testi-card glass-panel">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testi-text">"Coming out well, great efforts by the team. I can’t wait for go live.
+                            Keep pushing."</p>
+                        <h4 class="testi-name">Niranjan Limbachiya</h4>
+                        <span class="testi-role">Director , FinTask</span>
+                    </div>
+                    <div class="testi-card glass-panel">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testi-text">"The website made it much easier for customers to contact us and book
+                            services. The layout is simple, fast, and works well on mobile, which is important for our
+                            business"</p>
+                        <h4 class="testi-name">Vivek Prajapati</h4>
+                        <span class="testi-role">BusinessMan</span>
+                    </div>
+                    <div class="testi-card glass-panel">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testi-text">"The design highlights the portfolio with a clean, modern layout. The GSAP
+                            animations add smooth transitions without affecting performance, making the overall
+                            experience more engaging and professional."</p>
+                        <h4 class="testi-name">Shreeji Photo Studio</h4>
+                        <span class="testi-role">Photographer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container relative-z">
+                <div class="row contact-wrapper glass-panel">
+                    <!-- Left: Info -->
+                    <div class="col-12 col-lg-5 contact-info">
+                        <h2 class="section-title">Let's build something <span class="glow-text">Extraordinary</span>
+                        </h2>
+                        <p class="section-desc mb-5">Have a project in mind or just want to say hi? I'd love to hear
+                            from you.</p>
+
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:hiralchorasiya.dev@gmail.com">hiralchorasiya.dev@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Ahmedabad, Gujarat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="col-12 col-lg-7 contact-form-col">
+                        <form id="contact-form" class="custom-form sleek-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" id="name" class="form-control" required placeholder=" ">
+                                    <label for="name" class="floating-label">Your Name</label>
+                                    <div class="input-glow"></div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" id="email" class="form-control" required placeholder=" ">
+                                    <label for="email" class="floating-label">Your Email</label>
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" class="form-control" required placeholder=" ">
+                                <label for="subject" class="floating-label">Subject</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control focus-expand" rows="4" required
+                                    placeholder=" "></textarea>
+                                <label for="message" class="floating-label">Project Details</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <button type="submit" class="glow-btn submit-btn form-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-arrow-right ms-2 arrow-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer premium-footer relative-z">
+        <div class="footer-bg-text">Hiral</div>
+
+        <div class="container relative-z">
+            <div class="row footer-content">
+                <div class="col-12 col-lg-5 brand-col mb-4">
+                    <div class="logo mb-3">
+                        <span class="glow-text">Hiral</span>Chorasiya
+                    </div>
+                    <p class="brand-desc">Building fast, SEO-optimized WordPress websites that deliver real performance
+                        and user experience.</p>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 offset-lg-1 links-col mb-4">
+                    <h4 class="footer-heading">Navigate</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-3 social-col mb-4">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-socials premium-socials">
+                        <a href="https://github.com/Hiral-Chorasiya" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto: hiralchorasiya.dev@gmail.com" class="social-icon"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/hiral-chorasiya-092541225/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Hiral Chorasiya. Crafted with Precision.</p>
+                <a href="#hero" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Libraries -->
+    <!-- jQuery (Minimal usage) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Three.js for WebGL Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
